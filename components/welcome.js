@@ -11,7 +11,7 @@ const Welcome = () => {
         <div className="col-lg-6">
           <div className="d-flex  justify-content-center mx-1 align-items-center" style={{ height: "70vh" }}>
             <div>
-              <h1 style={{ fontSize: "4rem" }} className="welcome-text d-lg-none" style={{ fontSize: "36px" }}>
+              <h1 className="welcome-text d-lg-none" style={{ fontSize: "36px" }}>
                 The Dragon Garden Family welcomes you to our <Lanton />
               </h1>
               <h1 style={{ fontSize: "4rem" }} className="welcome-text d-none d-lg-block">
@@ -32,7 +32,7 @@ const Welcome = () => {
   );
 };
 
-const Lanton = (props) => {
+const Lanton = () => {
   return (
     <div className="d-flex flex-column justify-content-center align-items-center">
       <div className="bg-warning rounded" style={{ width: "100px", height: "25px" }}></div>
