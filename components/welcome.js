@@ -1,47 +1,52 @@
-import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row'; 
+import React from "react";
+import Container from "react-bootstrap/Container";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
 
 const Welcome = () => {
-    return (
-        <Container bsPrefix="menu">
-        <Row>
-          <Col md={12}>
-            <div className="d-flex justify-content-center">
-                <div className="d-flex flex-column welcome-text mx-1">
-                    <span>The</span>
-                    <span>Dragon</span>
-                    <span>Garden</span>
-                    <span>Family</span>
-                    <span>welcomes</span>
-                    <span>you</span>
-                    <span>to</span>
-                    <span>our</span>
-                    <span>traditional</span>
-                    <span>Chinese</span> 
-                    <span>Cuisine</span>
-                    <span>.</span>
-                </div>
-                <div className="d-flex flex-column welcome-text mx-1">
-                    <span>龙苑</span>
-                    <span>大</span>
-                    <span>酒家</span>
-                    <span>欢迎</span>
-                    <span>您</span>
-                    <span>品尝</span>
-                    <span>我们</span>
-                    <span>的</span>
-                    <span>传统</span>
-                    <span>中式</span> 
-                    <span>佳肴</span>
-                    <span>。</span>
-                </div>
+  return (
+    <Container bsPrefix="menu">
+      <Row>
+        <div className="col-lg-3"></div>
+        <div className="col-lg-6">
+          <div className="d-flex  justify-content-center mx-1 align-items-center" style={{ height: "70vh" }}>
+            <div>
+              <h1 style={{ fontSize: "4rem" }} className="welcome-text d-lg-none" style={{ fontSize: "36px" }}>
+                The Dragon Garden Family welcomes you to our <Lanton />
+              </h1>
+              <h1 style={{ fontSize: "4rem" }} className="welcome-text d-none d-lg-block">
+                The Dragon Garden Family welcomes you to our <Lanton />
+              </h1>
+              <h2 className="text-muted welcome-text-subheading d-lg-none" style={{ fontSize: "16px" }}>
+                龙苑 大 酒家 欢迎 您 品尝 我们 的 传统 中式 佳肴 。
+              </h2>
+              <h2 className="text-muted welcome-text-subheading d-none d-lg-block">
+                龙苑 大 酒家 欢迎 您 品尝 我们 的 传统 中式 佳肴 。
+              </h2>
             </div>
-            </Col>
-            </Row>
-        </Container>
-    );
-}
- 
+          </div>
+        </div>
+        <div className="col-lg-3"></div>
+      </Row>
+    </Container>
+  );
+};
+
+const Lanton = (props) => {
+  return (
+    <div className="d-flex flex-column justify-content-center align-items-center">
+      <div className="bg-warning rounded" style={{ width: "100px", height: "25px" }}></div>
+      <div
+        className="bg-danger p-4 text-dark"
+        style={{ maxWidth: "300px", borderRadius: "40px", boxShadow: "10px 5px 5px gray" }}
+      >
+        <div>Traditional</div> <div>Chinese </div>
+        <div>Cuisine</div>
+      </div>
+
+      <div className="bg-warning" style={{ width: "100px", height: "50px" }}></div>
+    </div>
+  );
+};
+
 export default Welcome;
