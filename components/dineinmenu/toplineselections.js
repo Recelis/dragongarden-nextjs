@@ -13,7 +13,7 @@ const ChefsSuggestionSpecial = () => {
           </p>
         </div>
       </div>
-      <MenuItem itemNumber="20" itemName="Combination Phoenix Nest Deluxe" itemPrice="29.00" />
+      <MenuItem itemNumber="20" itemName="Combination Phoenix Nest Deluxe" itemPrice="29.50" />
       <div className="row">
         <div className="col-6">
           <p className="menu-item-description pl-4">
