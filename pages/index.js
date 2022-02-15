@@ -18,7 +18,7 @@ export default function Home() {
         <title>Dragon Garden Family Restaurant Gympie</title>
         <meta name="description" content="Dragon Garden Restaurant Gympie" />
         <link rel="icon" href="/favicon.ico" />
-        <link href="https://fonts.googleapis.com/css?family=Anton|Ma+Shan+Zheng&display=optional" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Anton|Ma+Shan+Zheng&display=swap" rel="stylesheet" />
       </Head>
 
       <main className="App">
