@@ -12,8 +12,8 @@ const Beef = () => {
       <MenuItem itemNumber="49" itemName="Braised Beef in Curry Sauce" itemPrice="20.50" />
       <MenuItem itemNumber="50" itemName="Braised Beef with Black Bean Sauce" itemPrice="20.50" />
       <MenuItem itemNumber="51" itemName="Braised Beef with Plum Sauce" itemPrice="20.50" />
-      <MenuItem itemNumber="52" itemName="Braised Beef in Garlic Sauce" itemPrice="20.50" />
-      <MenuItem itemNumber="53" itemName="Flaming Beef in Satay Sauce" itemPrice="20.50" />
+      <MenuItem itemNumber="52" itemName="Braised Beef in Garlic Sauce" itemPrice="21.50" />
+      <MenuItem itemNumber="53" itemName="Flaming Beef in Satay Sauce" itemPrice="21.50" />
     </div>
   );
 };

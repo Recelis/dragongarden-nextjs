@@ -11,9 +11,9 @@ const Chicken = () => {
       <MenuItem itemNumber="57" itemName="Braised Chicken with Curry Sauce" itemPrice="20.50" />
       <MenuItem itemNumber="58" itemName="Braised Chicken with Black Bean Sauce" itemPrice="20.50" />
       <MenuItem itemNumber="59" itemName="Chilli Chicken Fillets" itemPrice="20.50" />
-      <MenuItem itemNumber="60" itemName="Flaming Chicken in Satay Sauce" itemPrice="20.50" />
+      <MenuItem itemNumber="60" itemName="Flaming Chicken in Satay Sauce" itemPrice="21.50" />
       <MenuItem itemNumber="61" itemName="Flaming Chicken with Special Sauce (Hoi Sin Sauce)" itemPrice="21.50" />
-      <MenuItem itemNumber="62" itemName="Honey Chicken" itemPrice="20.50" />
+      <MenuItem itemNumber="62" itemName="Honey Chicken" itemPrice="21.50" />
     </div>
   );
 };
