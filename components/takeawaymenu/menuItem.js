@@ -13,7 +13,7 @@ const MenuItem = (props) => {
         <span>${props.itemPrice}</span>
       </div>
       {props.itemTag ? (
-        <div className="col-1">
+        <div className="col-1 p-0">
           <Badge bg="warning" className="text-dark">
             {props.itemTag}
           </Badge>
