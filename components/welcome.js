@@ -16,10 +16,10 @@ const Welcome = () => {
           </Alert>
           <div className="d-flex  justify-content-center mx-1 align-items-center" style={{ height: "70vh" }}>
             <div>
-              <h1 className="welcome-text d-lg-none text-muted" style={{ fontSize: "36px" }}>
+              <h1 className="welcome-text d-lg-none text-light" style={{ fontSize: "36px" }}>
                 The Dragon Garden Family welcomes you to our <Lanton />
               </h1>
-              <h1 style={{ fontSize: "3.5rem" }} className="welcome-text text-muted d-none d-lg-block">
+              <h1 style={{ fontSize: "3.5rem" }} className="welcome-text text-light d-none d-lg-block">
                 The Dragon Garden Family welcomes you to our <Lanton />
               </h1>
               <h2 className="text-muted welcome-text-subheading d-lg-none" style={{ fontSize: "16px" }}>
