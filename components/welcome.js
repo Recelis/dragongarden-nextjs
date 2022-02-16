@@ -2,6 +2,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+import { Alert } from "react-bootstrap";
 
 const Welcome = () => {
   return (
@@ -9,6 +10,10 @@ const Welcome = () => {
       <Row>
         <div className="col-lg-3"></div>
         <div className="col-lg-6">
+          <Alert variant="danger">
+            Due to COVID we are temporarily closed. Sorry for any inconvenience. We will let you know when we will be
+            open again!
+          </Alert>
           <div className="d-flex  justify-content-center mx-1 align-items-center" style={{ height: "70vh" }}>
             <div>
               <h1 className="welcome-text d-lg-none" style={{ fontSize: "36px" }}>
