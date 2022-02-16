@@ -9,9 +9,10 @@ var Element = Scroll.Element;
 const OpenHours = () => {
   return (
     <div className="Component mb-4">
-      <Container bsPrefix="menu">
+      <Container fluid bsPrefix="menu">
         <Row>
-          <Col md={12}>
+          <Col md={3}></Col>
+          <Col md={6}>
             <Element name="hours">
               <h2>
                 <u>Hours</u>
@@ -52,6 +53,7 @@ const OpenHours = () => {
               </div>
             </div>
           </Col>
+          <Col md={3}></Col>
         </Row>
       </Container>
     </div>

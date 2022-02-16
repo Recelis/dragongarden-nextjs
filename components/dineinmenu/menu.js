@@ -29,9 +29,10 @@ var Element = Scroll.Element;
 const DineInMenu = () => {
   return (
     <div className="Component">
-      <Container bsPrefix="menu">
+      <Container fluid>
         <Row>
-          <Col md={12}>
+          <Col md={3}></Col>
+          <Col md={6}>
             <Element name="menu">
               <h2>
                 <u>Dine-in Menu</u>
@@ -74,6 +75,7 @@ const DineInMenu = () => {
             <Childrens />
             <Desserts />
           </Col>
+          <Col md={3}></Col>
         </Row>
         <Row />
       </Container>
