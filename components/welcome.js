@@ -10,10 +10,10 @@ const Welcome = () => {
       <Row>
         <div className="col-lg-3"></div>
         <div className="col-lg-6">
-          <Alert variant="danger">
+          {/* <Alert variant="danger">
             Due to COVID we are temporarily closed. Sorry for any inconvenience. We will let you know when we will be
             open again! Stay safe!
-          </Alert>
+          </Alert> */}
           <div className="d-flex  justify-content-center mx-1 align-items-center" style={{ height: "70vh" }}>
             <div>
               <h1 className="welcome-text d-lg-none text-light" style={{ fontSize: "36px" }}>
