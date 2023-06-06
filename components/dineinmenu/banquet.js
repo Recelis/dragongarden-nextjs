@@ -25,7 +25,7 @@ const Banquet = () => {
               <span>Fortune Cookie</span>
             </div>
           </div>
-          <span>$35.00/person</span>
+          <span>$42.00/person</span>
         </div>
         <div className="col-1"></div>
       </div>
@@ -48,7 +48,7 @@ const Banquet = () => {
               <span>Fortune Cookie</span>
             </div>
           </div>
-          <span>$42.00/person</span>
+          <span>$48.50/person</span>
         </div>
         <div className="col-1"></div>
       </div>
@@ -56,9 +56,9 @@ const Banquet = () => {
       <p>
         <b>Please Note:</b> You can upgrade dessert to:
       </p>
-      <MenuItem itemNumber="" itemName="Banana Fritters & Ice Cream" itemPrice="4.50" />
-      <MenuItem itemNumber="" itemName="Lychees and Ice Cream" itemPrice="4.50" />
-      <MenuItem itemNumber="" itemName="Deep Fried Ice Cream" itemPrice="5.00" />
+      <MenuItem itemNumber="" itemName="Banana Fritters & Ice Cream" itemPrice="5.00" />
+      <MenuItem itemNumber="" itemName="Lychees and Ice Cream" itemPrice="5.00" />
+      <MenuItem itemNumber="" itemName="Deep Fried Ice Cream" itemPrice="6.00" />
     </div>
   );
 };

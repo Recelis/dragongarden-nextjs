@@ -5,7 +5,7 @@ const ChefsSuggestionSpecial = () => {
   return (
     <div className="menu-category">
       <h3 className="menu-subheading">Top Line Selections 顶线选择</h3>
-      <MenuItem itemNumber="19" itemName="Sizzling Mongolian Lamb" itemPrice="25.50" />
+      <MenuItem itemNumber="19" itemName="Sizzling Mongolian Lamb" itemPrice="28.50" />
       <div className="row">
         <div className="col-6">
           <p className="menu-item-description pl-4">
@@ -13,7 +13,7 @@ const ChefsSuggestionSpecial = () => {
           </p>
         </div>
       </div>
-      <MenuItem itemNumber="20" itemName="Combination Phoenix Nest Deluxe" itemPrice="29.50" />
+      <MenuItem itemNumber="20" itemName="Combination Phoenix Nest Deluxe" itemPrice="32.50" />
       <div className="row">
         <div className="col-6">
           <p className="menu-item-description pl-4">
@@ -23,7 +23,7 @@ const ChefsSuggestionSpecial = () => {
         </div>
       </div>
 
-      <MenuItem itemNumber="21" itemName="Hong Kong Sizzling Steak" itemPrice="26.00" />
+      <MenuItem itemNumber="21" itemName="Hong Kong Sizzling Steak" itemPrice="29.50" />
       <div className="row">
         <div className="col-6">
           <p className="menu-item-description pl-4">
@@ -33,7 +33,7 @@ const ChefsSuggestionSpecial = () => {
           </p>
         </div>
       </div>
-      <MenuItem itemNumber="22" itemName="Pork Spare Ribs Flambe" itemPrice="23.50" />
+      <MenuItem itemNumber="22" itemName="Pork Spare Ribs Flambe" itemPrice="26.50" />
       <div className="row">
         <div className="col-6">
           <p className="menu-item-description pl-4">
@@ -44,7 +44,7 @@ const ChefsSuggestionSpecial = () => {
           </p>
         </div>
       </div>
-      <MenuItem itemNumber="23" itemName="Sizzling Garlic King Prawns" itemPrice="28.00" />
+      <MenuItem itemNumber="23" itemName="Sizzling Garlic King Prawns" itemPrice="30.00" />
       <div className="row">
         <div className="col-6">
           <p className="menu-item-description pl-4">
@@ -53,7 +53,7 @@ const ChefsSuggestionSpecial = () => {
           </p>
         </div>
       </div>
-      <MenuItem itemNumber="24" itemName="Chilli Spicy Calamari" itemPrice="22.00" />
+      <MenuItem itemNumber="24" itemName="Chilli Spicy Calamari" itemPrice="25.00" />
       <div className="row">
         <div className="col-6">
           <p className="menu-item-description pl-4">

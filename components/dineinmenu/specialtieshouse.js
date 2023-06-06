@@ -5,7 +5,7 @@ const SpecialtiesHouse = () => {
   return (
     <div className="menu-category">
       <h3 className="menu-subheading">Specialties of the House 房子的特色</h3>
-      <MenuItem itemNumber="25" itemName="West Lake Duck" itemPrice="28.50" />
+      <MenuItem itemNumber="25" itemName="West Lake Duck" itemPrice="32.50" />
       <div className="row">
         <div className="col-6">
           <p className="menu-item-description pl-4">
@@ -14,7 +14,7 @@ const SpecialtiesHouse = () => {
           </p>
         </div>
       </div>
-      <MenuItem itemNumber="26" itemName="Singapore Noodles" itemPrice="20.50" />
+      <MenuItem itemNumber="26" itemName="Singapore Noodles" itemPrice="23.50" />
       <div className="row">
         <div className="col-6">
           <p className="menu-item-description pl-4">
@@ -23,7 +23,7 @@ const SpecialtiesHouse = () => {
         </div>
       </div>
 
-      <MenuItem itemNumber="27" itemName="Assorted Seafood" itemPrice="28.50" />
+      <MenuItem itemNumber="27" itemName="Assorted Seafood" itemPrice="30.50" />
       <div className="row">
         <div className="col-6">
           <p className="menu-item-description pl-4">
@@ -32,7 +32,7 @@ const SpecialtiesHouse = () => {
           </p>
         </div>
       </div>
-      <MenuItem itemNumber="28" itemName="Shredded Meat Special" itemPrice="26.00" />
+      <MenuItem itemNumber="28" itemName="Shredded Meat Special" itemPrice="29.00" />
       <div className="row">
         <div className="col-6">
           <p className="menu-item-description pl-4">
@@ -41,7 +41,7 @@ const SpecialtiesHouse = () => {
           </p>
         </div>
       </div>
-      <MenuItem itemNumber="29" itemName="Honey King Prawns" itemPrice="27.50" />
+      <MenuItem itemNumber="29" itemName="Honey King Prawns" itemPrice="30.00" />
       <div className="row">
         <div className="col-6">
           <p className="menu-item-description pl-4">
@@ -50,7 +50,7 @@ const SpecialtiesHouse = () => {
           </p>
         </div>
       </div>
-      <MenuItem itemNumber="30" itemName="Black Pepper Steak" itemPrice="25.50" />
+      <MenuItem itemNumber="30" itemName="Black Pepper Steak" itemPrice="28.50" />
       <div className="row">
         <div className="col-6">
           <p className="menu-item-description pl-4">
@@ -59,7 +59,7 @@ const SpecialtiesHouse = () => {
           </p>
         </div>
       </div>
-      <MenuItem itemNumber="31" itemName="Tropical Chicken with Mango & Cashew Nuts" itemPrice="23.00" />
+      <MenuItem itemNumber="31" itemName="Tropical Chicken with Mango & Cashew Nuts" itemPrice="26.00" />
       <div className="row">
         <div className="col-6">
           <p className="menu-item-description pl-4">
@@ -69,7 +69,7 @@ const SpecialtiesHouse = () => {
         </div>
       </div>
 
-      <MenuItem itemNumber="32" itemName="Sze Chun Chicken" itemPrice="21.00" />
+      <MenuItem itemNumber="32" itemName="Sze Chun Chicken" itemPrice="23.50" />
       <div className="row">
         <div className="col-6">
           <p className="menu-item-description pl-4">
@@ -81,7 +81,7 @@ const SpecialtiesHouse = () => {
           </p>
         </div>
       </div>
-      <MenuItem itemNumber="33" itemName="Empress Boneless Chicken with Lemon Sauce" itemPrice="22.00" />
+      <MenuItem itemNumber="33" itemName="Empress Boneless Chicken with Lemon Sauce" itemPrice="26.00" />
       <div className="row">
         <div className="col-6">
           <p className="menu-item-description pl-4">
@@ -89,7 +89,7 @@ const SpecialtiesHouse = () => {
           </p>
         </div>
       </div>
-      <MenuItem itemNumber="34" itemName="Vegetarian's Delight" itemPrice="16.00" />
+      <MenuItem itemNumber="34" itemName="Vegetarian's Delight" itemPrice="18.00" />
       <div className="row">
         <div className="col-6">
           <p className="menu-item-description pl-4">
@@ -98,7 +98,7 @@ const SpecialtiesHouse = () => {
           </p>
         </div>
       </div>
-      <MenuItem itemNumber="35" itemName="Dragon Garden Chow Mein" itemPrice="26.00" />
+      <MenuItem itemNumber="35" itemName="Dragon Garden Chow Mein" itemPrice="29.00" />
       <div className="mb-0">
         <p className="pl-4 pb-0 mb-0">(Soft Noodle or Pan Fried)</p>
       </div>

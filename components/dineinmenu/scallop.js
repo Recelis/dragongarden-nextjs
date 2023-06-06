@@ -5,9 +5,9 @@ const ScallopFish = () => {
   return (
     <div className="menu-category">
       <h3 className="menu-subheading">Scallops 扇贝</h3>
-      <MenuItem itemNumber="42" itemName="Braised Scallops with  Ginger Shallots" itemPrice="28.00" />
-      <MenuItem itemNumber="43" itemName="Braised Scallops in Bird's Nest" itemPrice="29.50" />
-      <MenuItem itemNumber="44" itemName="Flaming Scallops in Satay Sauce" itemPrice="28.00" />
+      <MenuItem itemNumber="42" itemName="Braised Scallops with  Ginger Shallots" itemPrice="30.00" />
+      <MenuItem itemNumber="43" itemName="Braised Scallops in Bird's Nest" itemPrice="33.00" />
+      <MenuItem itemNumber="44" itemName="Flaming Scallops in Satay Sauce" itemPrice="30.00" />
     </div>
   );
 };
