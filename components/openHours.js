@@ -27,7 +27,7 @@ const OpenHours = () => {
             <div className="row">
               <div className="col-11 d-flex justify-content-between">
                 <span className="mx-1">Tuesday - Saturday</span>
-                <span>11am–2:30pm, 4:30–9:30pm</span>
+                <span>11am–2:30pm, 4:30–9pm</span>
               </div>
             </div>
             <div className="row">
