@@ -1,9 +1,5 @@
 import React from "react";
 
-import Container from "react-bootstrap/Container";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
-
 import Entree from "./entree";
 import Soup from "./soup";
 import ChefsSuggestionSpecial from "./chefsSuggestionSpecial";
@@ -24,42 +20,42 @@ var Element = Scroll.Element;
 const TakeAwayMenu = () => {
   return (
     <div className="Component">
-      <Container fluid>
-        <Row>
-          <Col md={3}></Col>
-          <Col md={6}>
-            <Element name="menu">
-              <h2>
-                <u>Takeaway Menu</u>
-              </h2>
-            </Element>
-            <p>
-              <span className="badge badge-warning">GF</span> Gluten Free <span className="badge badge-warning">V</span>{" "}
-              Vegetarian
-            </p>
-            <p>
-              Food Allergies - Should you have food allergies, please advise staff as this restaurant cannot be held
-              responsible.
-            </p>
-            <p>Prices include GST and are subject to change without notice.</p>
-            <Entree />
-            <Soup />
-            <ChefsSuggestionSpecial />
-            <Chicken />
-            <Beef />
-            <BBQPork />
-            <KingPrawn />
-            <ScallopsFish />
-            <Duck />
-            <SweetSour />
-            <Omelette />
-            <ChowMein />
-            <Rice />
-          </Col>
-          <Col md={3}></Col>
-        </Row>
-        <Row />
-      </Container>
+      <div className="container menu">
+        <Element name="menu">
+          <div className="section-header">
+            <h2>Takeaway Menu</h2>
+            <p className="subtitle">Pick-up or delivery — your favourites to go</p>
+          </div>
+        </Element>
+        <div className="menu-info-bar">
+          <span>
+            <span className="badge badge-warning" style={{ marginRight: "0.3rem" }}>
+              GF
+            </span>{" "}
+            Gluten Free
+          </span>
+          <span>
+            <span className="badge badge-warning">V</span> Vegetarian
+          </span>
+        </div>
+        <p className="menu-info-text">
+          Food Allergies — Please advise staff. This restaurant cannot be held responsible.
+        </p>
+        <p className="menu-info-text">Prices include GST and are subject to change without notice.</p>
+        <Entree />
+        <Soup />
+        <ChefsSuggestionSpecial />
+        <Chicken />
+        <Beef />
+        <BBQPork />
+        <KingPrawn />
+        <ScallopsFish />
+        <Duck />
+        <SweetSour />
+        <Omelette />
+        <ChowMein />
+        <Rice />
+      </div>
     </div>
   );
 };
