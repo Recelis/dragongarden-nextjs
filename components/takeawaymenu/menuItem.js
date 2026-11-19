@@ -1,40 +1,22 @@
 import React from "react";
-import PropTypes from "prop-types";
-import { Badge } from "react-bootstrap";
 
 const MenuItem = (props) => {
   return (
-    <div className="row">
-      <div className="col-11 d-flex justify-content-between">
-        <div>
-          <span className="mx-1">{props.itemNumber}.</span>
-          <span>{props.itemName}</span>
-        </div>
-        <span>${props.itemPrice}</span>
+    <div className="menu-item-row">
+      <div>
+        <span className="menu-item-number">{props.itemNumber}.</span>
+        <span className="menu-item-name">{props.itemName}</span>
       </div>
-      {props.itemTag ? (
-        <div className="col-1 p-0">
-          <Badge bg="warning" className="text-dark">
+      <div>
+        <span className="menu-item-price">${props.itemPrice}</span>
+        {props.itemTag ? (
+          <span className="badge badge-warning" style={{ marginLeft: "0.5rem" }}>
             {props.itemTag}
-          </Badge>
-        </div>
-      ) : (
-        <div className="col-1"></div>
-      )}
+          </span>
+        ) : null}
+      </div>
     </div>
   );
-};
-
-MenuItem.propTypes = {
-  itemNumber: PropTypes.string,
-  itemName: PropTypes.string,
-  itemTag: PropTypes.string,
-};
-
-MenuItem.defaultProps = {
-  itemNumber: "",
-  itemName: "",
-  itemTag: "",
 };
 
 export default MenuItem;

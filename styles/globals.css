@@ -1,60 +1,505 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+/* Bootstrap is loaded by react-bootstrap */
+/* No @import needed */
+
+/* ===== Dragon Garden — Brand Theme ===== */
+:root {
+  --brand-red: #8B0000;
+  --brand-red-dark: #5C0000;
+  --brand-red-light: #CC3333;
+  --brand-gold: #B8860B;
+  --brand-gold-light: #D4A017;
+  --brand-dark: #FFF8E7;
+  --brand-dark-accent: #F5EDE0;
+  --brand-cream: #FFF8E7;
+  --brand-text: #2A2A2A;
+  --brand-border: #E8DCC8;
+}
 
 html,
 body {
-  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-    Helvetica Neue, sans-serif;
+  padding: 0;
+  background-color: var(--brand-dark);
+  color: var(--brand-text);
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
   height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
 }
 
 * {
   box-sizing: border-box;
 }
 
-.welcome-text {
-  font-family: "Ma Shan Zheng", cursive;
-  text-align: center;
-  font-size: 54px;
-}
-.welcome-text-subheading {
-  font-family: "Ma Shan Zheng", cursive;
-  text-align: center;
-  font-size: 26px;
+/* ===== Navigation ===== */
+.navbar-dragon {
+  background: linear-gradient(135deg, var(--brand-red-dark), var(--brand-red)) !important;
+  border-bottom: 3px solid var(--brand-gold);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+  padding: 0.5rem 1rem;
 }
 
+.navbar-dragon .navbar-brand {
+  font-family: 'Ma Shan Zheng', cursive;
+  font-weight: 700;
+  color: var(--brand-gold) !important;
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
+}
+
+.navbar-dragon .nav-link {
+  color: rgba(255,255,255,0.85) !important;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  transition: color 0.2s ease, border-bottom 0.2s ease;
+  border-bottom: 2px solid transparent;
+  padding: 0.5rem 0.8rem;
+  margin: 0 0.2rem;
+}
+
+.navbar-dragon .nav-link:hover,
+.navbar-dragon .nav-link.active {
+  color: #fff !important;
+  border-bottom-color: var(--brand-gold);
+}
+
+.navbar-dragon .navbar-toggler {
+  border-color: var(--brand-gold);
+}
+
+.navbar-dragon .phone-number {
+  color: var(--brand-gold-light) !important;
+}
+
+/* ===== Hero Section ===== */
+.hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 56px;
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.4);
+  z-index: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(0,0,0,0.2) 0%,
+    rgba(139,0,0,0.2) 50%,
+    rgba(0,0,0,0.5) 100%
+  );
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 2rem;
+  max-width: 800px;
+}
+
+.hero-logo {
+  height: 100px;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.4));
+}
+
+.hero-title {
+  font-family: 'Ma Shan Zheng', cursive;
+  font-size: 3rem;
+  color: var(--brand-gold);
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-family: 'Ma Shan Zheng', cursive;
+  font-size: 2rem;
+  color: #FFD700;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+  margin-bottom: 1rem;
+}
+
+.hero-tagline {
+  font-size: 1.1rem;
+  color: #fff;
+  opacity: 0.9;
+  letter-spacing: 1px;
+}
+
+.hero-cta {
+  margin-top: 2rem;
+}
+
+.hero-cta .btn {
+  margin: 0 0.5rem;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+/* ===== Section Styles ===== */
+.section-dragon {
+  padding: 3rem 0;
+  background-color: var(--brand-dark);
+}
+
+.section-dragon-alt {
+  background-color: var(--brand-dark-accent);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-header h2 {
+  font-weight: 700;
+  color: var(--brand-red);
+  font-size: 2rem;
+  border-bottom: 2px solid var(--brand-gold);
+  display: inline-block;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-header .subtitle {
+  color: var(--brand-text);
+  opacity: 0.6;
+  font-size: 0.95rem;
+}
+
+/* ===== Welcome ===== */
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.welcome-text-en {
+  font-size: 1.5rem;
+  color: var(--brand-text);
+  text-align: center;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.welcome-text-cn {
+  font-family: "Ma Shan Zheng", cursive;
+  font-size: 2rem;
+  color: var(--brand-red);
+  text-align: center;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.badge-row {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin: 0 0 1rem 0;
+}
+
+.badge-dragon {
+  background-color: var(--brand-red);
+  color: var(--brand-gold);
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0.35rem 1.2rem;
+  border: 1px solid var(--brand-gold);
+  letter-spacing: 0.5px;
+}
+
+/* ===== Contact Details ===== */
+.contact-section {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.contact-section a {
+  color: var(--brand-red);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contact-section a:hover {
+  color: var(--brand-red-light);
+  text-decoration: underline;
+}
+
+.contact-item {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: var(--brand-text);
+}
+
+.contact-item i,
+.contact-item svg {
+  color: var(--brand-red);
+  width: 24px;
+  margin-right: 0.5rem;
+}
+
+.phone-number {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--brand-red) !important;
+}
+
+/* ===== Hours ===== */
+.hours-card {
+  background: #fff;
+  border: 1px solid var(--brand-border);
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.hours-card h3 {
+  font-family: 'Ma Shan Zheng', cursive;
+  color: var(--brand-red);
+  text-align: center;
+  border-bottom: 1px solid var(--brand-border);
+  padding-bottom: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.hours-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid var(--brand-border);
+}
+
+.hours-row:last-of-type {
+  border-bottom: none;
+}
+
+.hours-day {
+  color: var(--brand-text);
+  font-weight: 600;
+}
+
+.hours-time {
+  color: var(--brand-red);
+  font-weight: 700;
+}
+
+.holiday-surcharge {
+  text-align: center;
+  color: var(--brand-red-light);
+  font-size: 0.85rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+/* ===== Menu Toggle Buttons ===== */
+.menu-toggle-bar {
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+.menu-toggle-bar .btn {
+  margin: 0 0.5rem;
+  padding: 0.6rem 2rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+/* ===== Menu ===== */
 .menu {
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
+  max-width: 900px;
 }
 
 .menu-category {
-  margin-bottom: 20px;
+  margin-bottom: 1.5rem;
+  background: #fff;
+  border: 1px solid var(--brand-border);
+  border-radius: 10px;
+  padding: 1rem 1.2rem;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
 }
 
-.menu-item-description {
-  font-size: 14px;
+.menu-category:hover {
+  border-color: var(--brand-gold);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
 }
 
-.itemTag {
-  /* width: 30px;
-height: 30px; */
-  background-color: yellow;
-  color: black;
+.menu-subheading {
+  color: var(--brand-red);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--brand-border);
 }
 
-.menu_img {
-  margin: 20px;
+.menu-item-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.2rem 0;
+  font-size: 0.95rem;
+  color: var(--brand-text);
 }
 
-.footer-text {
+.menu-item-number {
+  color: var(--brand-gold);
+  opacity: 0.6;
+  margin-right: 0.3rem;
+  font-size: 0.85rem;
+}
+
+.menu-item-price {
+  color: var(--brand-red);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* ===== Menu Info ===== */
+.menu-info-bar {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+
+.menu-info-text {
+  font-size: 0.9rem;
+  color: var(--brand-text);
+  opacity: 0.6;
   text-align: center;
+}
+
+/* ===== Google Maps ===== */
+.map-section {
+  padding: 2rem 0;
+}
+
+.map-container {
+  border: 2px solid var(--brand-border);
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 700px;
+  margin: 0 auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.map-container iframe {
+  display: block;
+  width: 100%;
+  height: 350px;
+  border: 0;
+}
+
+.map-address-link {
+  display: block;
+  text-align: center;
+  margin-top: 0.8rem;
+  color: var(--brand-red);
+  font-size: 0.95rem;
+}
+
+/* ===== Footer ===== */
+.footer-dragon {
+  background: linear-gradient(135deg, var(--brand-red-dark), var(--brand-red));
+  border-top: 2px solid var(--brand-gold);
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+.footer-dragon p {
+  color: rgba(255,255,255,0.7);
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.footer-dragon .social-link {
+  color: var(--brand-gold);
+  font-size: 1.2rem;
+  margin: 0 0.5rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.footer-dragon .social-link:hover {
+  color: #fff;
+  transform: scale(1.15);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  .hero-subtitle {
+    font-size: 1.4rem;
+  }
+  .hero-section {
+    min-height: 60vh;
+  }
+  .menu {
+    width: 95%;
+  }
+  .hours-card {
+    margin: 0 1rem;
+  }
+  .welcome-text-en {
+    font-size: 1.2rem;
+  }
+  .welcome-text-cn {
+    font-size: 1.5rem;
+  }
+  .phone-number {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.6rem;
+  }
+  .hero-logo {
+    height: 70px;
+  }
+  .hero-cta .btn {
+    display: block;
+    margin: 0.5rem auto;
+    width: 80%;
+  }
 }

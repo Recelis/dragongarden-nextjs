@@ -1,61 +1,48 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
 
 var Scroll = require("react-scroll");
 var Element = Scroll.Element;
 
 const OpenHours = () => {
   return (
-    <div className="Component mb-4">
-      <Container fluid bsPrefix="menu">
-        <Row>
-          <Col md={3}></Col>
-          <Col md={6}>
-            <Element name="hours">
-              <h2>
-                <u>Hours</u>
-              </h2>
-            </Element>
-            <div className="row">
-              <div className="col-11 d-flex justify-content-between">
-                <span className="mx-1">Monday</span>
-                <span>Closed</span>
-              </div>
+    <div className="section-dragon" id="hours">
+      <div className="container">
+        <Element name="hours">
+          <div className="section-header">
+            <h2>Opening Hours</h2>
+          </div>
+          <div className="hours-card">
+            <div className="hours-row">
+              <span className="hours-day">Monday</span>
+              <span className="hours-time" style={{ color: "#CC6666" }}>
+                Closed
+              </span>
             </div>
-            <div className="row">
-              <div className="col-11 d-flex justify-content-between">
-                <span className="mx-1">Tuesday - Saturday</span>
-                <span>11am–2:30pm, 4:30–9pm</span>
-              </div>
+            <div className="hours-row">
+              <span className="hours-day">Tuesday — Saturday</span>
+              <span className="hours-time">11am – 2:30pm, 4:30 – 9pm</span>
             </div>
-            <div className="row">
-              <div className="col-11 d-flex justify-content-between">
-                <span className="mx-1">Sunday</span>
-                <span>12pm-2:30pm, 4:30pm-9pm</span>
-              </div>
+            <div className="hours-row">
+              <span className="hours-day">Sunday</span>
+              <span className="hours-time">12pm – 2:30pm, 4:30 – 9pm</span>
             </div>
-            <div className="row">
-              <div className="col-11 d-flex justify-content-between">
-                <span className="mx-1">Public Holidays</span>
-                <span>
-                  Check on &nbsp;
-                  <a href="https://www.facebook.com/DragonGardenRestaurant/">
-                    <i className="fa fa-facebook" aria-hidden="true"></i>
-                  </a>
-                </span>
-              </div>
+            <div className="hours-row">
+              <span className="hours-day">Public Holidays</span>
+              <span className="hours-time">
+                Check{" "}
+                <a
+                  href="https://www.facebook.com/DragonGardenRestaurant/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Facebook
+                </a>
+              </span>
             </div>
-            <div className="row">
-              <div className="col-12 d-flex justify-content-center">
-                <span className="mx-1">Public Holiday Surcharge - 15%.</span>
-              </div>
-            </div>
-          </Col>
-          <Col md={3}></Col>
-        </Row>
-      </Container>
+            <p className="holiday-surcharge">Public Holiday Surcharge — 15%</p>
+          </div>
+        </Element>
+      </div>
     </div>
   );
 };
