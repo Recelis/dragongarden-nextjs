@@ -28,7 +28,7 @@ const Navigation = () => {
             Find Us
           </Nav.Link>
         </Nav>
-        <Nav>
+        <Nav className="ms-auto">
           <Nav.Link href="tel:0754825700" className="phone-number">
             📞 (07) 5482 5700
           </Nav.Link>
