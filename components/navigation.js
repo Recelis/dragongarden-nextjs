@@ -3,14 +3,16 @@ import { Link as ScrollLink } from "react-scroll";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { SocialIcon } from "react-social-icons";
+import Container from "react-bootstrap/Container";
 
 const Navigation = () => {
   return (
     <Navbar className="navbar-dragon" expand="lg" fixed="top" style={{ zIndex: 1030 }}>
+
       <Navbar.Brand>
-        <ScrollLink to="hero" spy={true} smooth={true} duration={500} offset={-70}>
+        {/* <ScrollLink to="hero" spy={true} smooth={true} duration={500} offset={-70}> */}
           Dragon Garden
-        </ScrollLink>
+        {/* </ScrollLink> */}
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">

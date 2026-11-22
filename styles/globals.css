@@ -33,6 +33,10 @@ body {
 
 /* ===== Navigation ===== */
 .navbar-dragon {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   background: linear-gradient(135deg, var(--brand-red-dark), var(--brand-red)) !important;
   border-bottom: 3px solid var(--brand-gold);
   box-shadow: 0 2px 12px rgba(0,0,0,0.3);

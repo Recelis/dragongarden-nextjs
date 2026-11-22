@@ -1,4 +1,5 @@
 import React from "react";
+import Badge from "react-bootstrap/Badge";
 
 const MenuItem = (props) => {
   return (
@@ -8,12 +9,12 @@ const MenuItem = (props) => {
         <span className="menu-item-name">{props.itemName}</span>
       </div>
       <div>
-        <span className="menu-item-price">${props.itemPrice}</span>
         {props.itemTag ? (
-          <span className="badge badge-warning" style={{ marginLeft: "0.5rem" }}>
+          <Badge bg="warning" style={{ marginRight: "0.5rem" }}>
             {props.itemTag}
-          </span>
+          </Badge>
         ) : null}
+        <span className="menu-item-price">${props.itemPrice}</span>
       </div>
     </div>
   );
