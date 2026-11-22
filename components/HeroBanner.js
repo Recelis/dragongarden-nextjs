@@ -13,7 +13,6 @@ const HeroBanner = () => {
         <div className="hero-content">
           <img src="/logo.png" alt="Dragon Garden Logo" className="hero-logo" />
           <h1 className="hero-title">Dragon Garden Family Restaurant</h1>
-          <p className="hero-subtitle">龙苑大酒家欢迎您品尝我们的传统中式佳肴</p>
           <p className="hero-tagline">Traditional Chinese Cuisine — Serving Gympie Since 1983</p>
           <div className="hero-cta">
             <a href="tel:0754825700" className="btn btn-danger btn-lg rounded-pill px-4 fw-bold">
