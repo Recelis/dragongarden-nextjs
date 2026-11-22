@@ -75,6 +75,10 @@ body {
   color: var(--brand-gold-light) !important;
 }
 
+.nav-link {
+  cursor: pointer;
+}
+
 /* ===== Hero Section ===== */
 .hero-section {
   position: relative;
