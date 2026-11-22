@@ -13,6 +13,7 @@ import SweetSour from "./sweetsour";
 import Omelette from "./omelette";
 import ChowMein from "./chowmein";
 import Rice from "./rice";
+import { Badge } from "react-bootstrap";
 
 var Scroll = require("react-scroll");
 var Element = Scroll.Element;
@@ -29,13 +30,15 @@ const TakeAwayMenu = () => {
         </Element>
         <div className="menu-info-bar">
           <span>
-            <span className="badge badge-warning" style={{ marginRight: "0.3rem" }}>
+            <Badge bg="warning" style={{ marginRight: "0.3rem" }}>
               GF
-            </span>{" "}
+            </Badge>{" "}
             Gluten Free
           </span>
           <span>
-            <span className="badge badge-warning">V</span> Vegetarian
+            <Badge bg="warning" style={{ marginRight: "0.3rem" }}>
+              V
+            </Badge> Vegetarian
           </span>
         </div>
         <p className="menu-info-text">

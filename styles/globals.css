@@ -388,10 +388,24 @@ body {
   font-size: 0.85rem;
 }
 
+.menu-item-right {
+  display: flex;
+  align-items: baseline;
+  flex-shrink: 0;
+}
+
+.menu-item-tag {
+  width: 3.2rem;
+  text-align: right;
+  margin-right: 0.5rem;
+}
+
 .menu-item-price {
   color: var(--brand-red);
   font-weight: 700;
   white-space: nowrap;
+  width: 4.5rem;
+  text-align: right;
 }
 
 /* ===== Menu Info ===== */
