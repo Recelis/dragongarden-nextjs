@@ -122,9 +122,13 @@ body {
 }
 
 .hero-logo {
-  height: 100px;
-  margin-bottom: 1rem;
-  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.4));
+  height: 180px;
+  margin-bottom: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background: rgba(255, 248, 231, 0.95);
+  border-radius: 12px;
+  border: 2px solid var(--brand-gold);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
 }
 
 .hero-title {
@@ -513,7 +517,7 @@ body {
     font-size: 1.6rem;
   }
   .hero-logo {
-    height: 70px;
+    height: 110px;
   }
   .hero-cta .btn {
     display: block;

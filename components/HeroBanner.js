@@ -3,8 +3,7 @@ var Scroll = require("react-scroll");
 var Element = Scroll.Element;
 
 const HeroBanner = () => {
-  const images = ["/stock1.jpg", "/stock2.jpg", "/stock3.jpg"];
-  const heroImage = images[Math.floor(Math.random() * images.length)];
+  const heroImage = './DragonGardenPic.jpg';
 
   return (
     <Element name="hero">
